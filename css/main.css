@@ -2,15 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: inherit;
 }
 
 html {
     font-size: 14px;
+    font-family: 'Lato', sans-serif;
 }
 
+
 /* Global styles  */
+
 .container {
-    width: 80%;
+    width: 93%;
     margin: 0 auto;
 }
 
@@ -21,5 +25,199 @@ a {
 ul {
     list-style-type: none;
 }
+
+
 /* END Global styles  */
 
+
+/* Particular styles  */
+
+.main {
+    min-height: 300px;
+    position: relative;
+}
+
+.clip-path-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    background-image: linear-gradient(#c3f3e5, #6decb8);
+    clip-path: polygon(0 0, 31% 0, 85% 45%, 0 73%);
+}
+
+.clip-path-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(#c3f3e5, #6decb8);
+    clip-path: ellipse(50% 40% at 47% 72%);
+    min-height: 300px !important;
+    width: 100% !important;
+}
+
+.main-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navbar {
+    padding: .8rem .7rem;
+    /* box-shadow: 0px .5px 12px rgb(170, 170, 170); */
+}
+
+.nav .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo {
+    display: flex;
+    font-size: 1.12rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #08214d;
+    place-items: center;
+}
+
+.nav .logo img {
+    width: 1.7rem;
+    margin-left: .3rem;
+    height: auto;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    flex-basis: 70%;
+    min-height: 3rem;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.menu-items .features,
+.menu-items .buttons-features {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    height: 3rem;
+    padding: 0;
+}
+
+.menu-items .features ul,
+.menu-items .buttons-features ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features li,
+.buttons-features li {
+    height: 100%;
+    margin-right: .7rem;
+}
+
+.features ul li a,
+.buttons-features ul li a {
+    font-size: 80%;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+.features ul li a {
+    font-weight: 900;
+    color: #08214d;
+}
+
+.button {
+    border-radius: 25px;
+    font-weight: 700;
+    padding: .57rem .8rem;
+    color: white;
+}
+
+.login-btn {
+    background-color: #02244b;
+    box-shadow: 1px 1px 10px #02244b6c;
+}
+
+.signin-btn {
+    background-color: #2bbcd8;
+    box-shadow: 1px 1px 10px #2bbbd85b;
+}
+
+
+/* END Header styles  */
+
+
+/* Showcase styles  */
+
+.showcase {
+    position: relative;
+    color: #08214d;
+}
+
+.showcase .big-x h1 {
+    color: #98f3d9;
+    margin-right: 1.2rem;
+    font-size: 12rem;
+    text-align: right;
+    text-shadow: 1px 2px 10px rgb(211, 211, 211);
+}
+
+
+/* showcase image  */
+
+.image-content img {
+    width: 12rem;
+    height: auto;
+}
+
+.image-content {
+    position: absolute;
+    right: 2.7%;
+}
+
+.showcase .container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.showcase .text-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.3rem;
+    justify-content: center;
+    margin-top: 2.3rem;
+}
+
+.showcase .text-content h2 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+
+.showcase .text-content h2:nth-of-type(2),
+.showcase .text-content p {
+    margin-bottom: .7rem;
+}
+
+.buttons {
+    display: flex;
+}
+
+.text-content .buttons a {
+    text-transform: uppercase;
+    font-size: .6rem;
+    margin-right: .3rem;
+}
